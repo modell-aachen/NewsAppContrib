@@ -24,8 +24,8 @@ data/_apps/NewsApp/ArchivContentLoad.txt 0644
 lib/Foswiki/Contrib/NewsAppContrib.pm 0644
 locale/NewsAppContrib/de.po 0644
 templates/foswiki.news.tmpl 0644
-pub/System/NewsApp/css/mahrnews.css 0644
-pub/System/NewsApp/js/mahrnews.js 0644
+pub/System/NewsApp/css/news.css 0644
+pub/System/NewsApp/js/news.js 0644
 pub/System/NewsApp/img/add.png 0644
 pub/System/NewsApp/img/archive.png 0644
 pub/System/NewsApp/img/close.png 0644
