@@ -1,0 +1,29 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="pending" date="1427369215" format="1.1" version="24"}%
+<verbatim>
+	%STARTSECTION{name="archivLazyLoading"}%
+
+%SOLRSEARCH{
+"form: *NewsForm  field_DocumentType_s: \"News\" process_state_s:FREIGEGEBEN"
+fields="web, topic, createdate, webtopic, date, author, text, attachment, field_TopicTitle_s, field_Creator_lst, field_Subject_s, field_Date_dt, field_CalenarPublish_dt"
+highlight="on"
+format="
+<div class=\"header\"><a href='%SCRIPTURL{view}%/$web/$topic'>$field_TopicTitle_s</a></div>
+<div class=\"info\">$createdate | $field_Subject_s | $field_Creator_lst (%MAKETEXT{"Changed"}% $date | $author)</div>
+<div class=\"singleNewsItemContent\">
+	<div class=\"singleNewsItemText\">
+$percntINCLUDE{\"$web.$topic\"}$percnt
+	</div>
+	<div class=\"bigThumb singleNewsItemImage\">$percntINCLUDE{\"%TOPIC%\" section=\"preview_imageLazy\" topic=\"$webtopic\"}$percnt</div>
+	%CLEAR%
+</div>"
+sort="date desc"
+start="%URLPARAM{"rowNumber"}%"
+rows="5"
+}%
+
+	%ENDSECTION{name="archivLazyLoading"}%
+
+	%STARTSECTION{"preview_imageLazy"}%
+    %ATTACHMENTLIST{topic="%topic%" format="<img src='$fileUrl' />" sort="$fileDate" sortorder="ascending" limit="1"}%
+    %ENDSECTION{"preview_imageLazy"}%
+</verbatim>

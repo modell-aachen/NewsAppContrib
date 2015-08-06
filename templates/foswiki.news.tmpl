@@ -1,0 +1,46 @@
+%TMPL:INCLUDE{"foswiki"}%
+
+%TMPL:DEF{"script"}%
+%TMPL:PREV%
+%ADDTOZONE{
+	"script"
+	id = "mahrWikiScript" 
+	text = "
+	<literal>
+		<script type='text/javascript' src='%PUBURLPATH%/System/%NEWSWEB%/js/mahrnews.js'></script>
+	</literal>
+"
+}%
+%TMPL:END%
+
+%TMPL:DEF{"head"}%
+%TMPL:PREV%
+%ADDTOZONE{
+        "head"
+        id = "mahrWikiCSS"
+        text = "
+        <literal>
+                <link rel='stylesheet' href='%PUBURLPATH%/System/%NEWSWEB%/css/mahrnews.css' />
+        </literal>
+"
+}%
+%TMPL:END%
+
+%TMPL:DEF{"main"}%
+%TMPL:PREV%
+
+<div id="rightBarWrapper">
+   	<div style="background-image: url('%PUBURLPATH%/System/%NEWSWEB%/img/close.png')" class="rightBarClose"></div>
+   	<section class="newsHeader">Aktuelles aus der Organisation</section>
+   	<div class="modacRightBar">
+%INCLUDE{"%NEWSWEB%.WebRightBar"}%
+   	</div>
+   	<div id="rightBarControl">
+		<div title="Neue News anlegen" id="linkNewNews"><a class="newsTopIconLinks" href="%SCRIPTURL{edit}%/%NEWSWEB%/NewsAUTOINC000?templatetopic=%NEWSWEB%.NewsTemplate;formtemplate=NewsForm;t=%GMTIME{$epoch}%"><img src="%PUBURLPATH%/System/%NEWSWEB%/img/add.png" /></a></div>
+        	<div title="Workflow &Uuml;bersicht" id="linkHome"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEB%/WebHome"><img src="%PUBURLPATH%/System/%NEWSWEB%/img/home.png" /></a></div>
+   		<div title="Archiv" id="linkArchiv"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEB%/NewsArchiv"><img src=%PUBURLPATH%/System/%NEWSWEB%/img/archive.png" /></a></div>
+	</div>
+</div>
+
+%TMPL:END%
+

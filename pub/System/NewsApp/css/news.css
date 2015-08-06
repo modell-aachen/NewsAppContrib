@@ -1,0 +1,157 @@
+/***********************/
+/***** WebRightBar *****/
+/***********************/
+#rightBarWrapper {
+    display: none;
+    background-color: white;
+    border-left: 1px solid #ca002f;
+    height: 100%;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    width: 870px;
+    z-index: 10001;
+}
+#rightBarWrapper #rightBarControl {
+    background-color: #ca002f;
+    height: 9%;
+    margin-top: 1px;
+    position: relative;
+}
+#rightBarWrapper .rightBarClose {
+    background-color: #ca002f;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    left: -50px;
+    position: absolute;
+    top: -1px;
+    width: 48px;
+}
+#rightBarWrapper .modacRightBar {
+    border-right: 0;
+    height: 90%;
+    margin: 1px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+#rightBarWrapper .newsHeader {
+    background-color: #ca002f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 29px;
+    padding: 5px 0 0 10px;
+    position: relative;
+}
+#rightBarWrapper #rightBarControl #linkArchiv {
+    left: 6%;
+}
+#rightBarWrapper #rightBarControl #linkNewNews {
+    left: 1%;
+}
+#rightBarWrapper #rightBarControl #linkHome {
+    left: 11%;
+}
+#rightBarWrapper #rightBarControl #linkArchiv,
+#rightBarWrapper #rightBarControl #linkNewNews,
+#rightBarWrapper #rightBarControl #linkHome {
+    position: absolute;
+    top: 5px;
+}
+#rightBarWrapper table.newsItem { 
+    width: 100%; 
+}
+#rightBarWrapper table.newsItem td {
+    vertical-align: top;
+}
+#rightBarWrapper table.newsItem .summary { 
+    padding: 0 50px 0 0; 
+    cursor: pointer;
+}
+#rightBarWrapper table.newsItem .partSummary { 
+    padding: 0 50px 0 0; 
+    cursor: pointer;
+}
+#rightBarWrapper .header { 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #ca002f; 
+    margin-bottom: 8px;
+}
+#rightBarWrapper .info { 
+    font-size: 0.9em; 
+    color: #89898b; 
+    text-transform: uppercase; 
+    margin-bottom: 4px;
+}
+#rightBarWrapper .modacRightBar .bigThumb img {
+    max-width: 200px;
+}
+#rightBarWrapper .bigThumb {
+    text-align: center;
+}
+
+/****************************/
+/***** END: WebRightBar *****/
+/****************************/
+
+/************************/
+/***** NewsArchive  *****/
+/************************/
+#archiveContentArea table.newsArchivItem {
+    width: 100%; 
+}
+#archiveContentArea table.newsArchivItem td { 
+    vertical-align: top; 
+}
+#archiveContentArea table.newsArchivItem .summary { 
+    padding: 0 50px 0 0; 
+}
+#archiveContentArea .singleNewsItemContent { 
+    width: 1000px; 
+    border-bottom: 1px solid; 
+    margin: 0 0 20px 0; 
+    padding: 10px; 
+}
+#archiveContentArea .singleNewsItemText { 
+    float: left; 
+    width: 500px; 
+}
+#archiveContentArea .singleNewsItemImage { 
+    float: right; 
+}
+#archiveContentArea .header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ca002f;
+    margin-bottom: 8px;
+}
+#archiveContentArea .info {
+    color: #89898b;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+/*****************************/
+/***** END: NewsArchive *****/
+/*****************************/
+
+/********************/
+/***** WebHome  *****/
+/********************/
+.homeLinkArchiv{ 
+    background-color: #ca002f;
+    border-radius: 5px;
+    padding: 0 2px;
+    width: 30px;
+}
+/************************/
+/***** END: WebHome *****/
+/************************/
+

@@ -1,0 +1,9 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1437584747" format="1.1" version="5"}%
+%META:TOPICPARENT{name="WebHome"}%
+| *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
+| Requester | label | 50 | %WIKINAME% | Author | M |
+| DocumentType | select | 1 | News | | |
+| TopicTitle | text | 50 | | Bitte geben Sie einen eindeutigen Artikelnamen an | M |
+| Superior | textboxlist | 50 mustMatch limit=1 | %USERAUTOCOMPLETE% | Bitte tragen Sie Ihren Vorgesetzten ein | M |
+| Subject | select2 | 50 | Personal, Produkt, Veranstaltung | Subject | |
+| Locations | select2 | 50 | Location 1, Location 2 | Locations | |

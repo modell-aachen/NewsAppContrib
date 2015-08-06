@@ -1,0 +1,10 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1434976734" format="1.1" version="8"}%
+
+
+%META:FORM{name="NewsForm"}%
+%META:FIELD{name="TopicTitel" attributes="m" title="TopicTitel" value=""}%
+%META:FIELD{name="Creator" attributes="" title="Creator" value=""}%
+%META:FIELD{name="Subject" attributes="" title="Subject" value="Personal"}%
+%META:FIELD{name="CalenderPublish" attributes="" title="CalenderPublish" value=""}%
+%META:TOPICMOVED{by="BaseUserMapping_333" date="1434976734" from="Portal.NewsDeTemplate" to="News.NewsDeTemplate"}%
+

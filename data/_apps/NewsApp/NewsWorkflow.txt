@@ -1,0 +1,29 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1426694764" format="1.1" reprev="12" version="30"}%
+---++ Defaults
+| *State type* | *Left tab* | *Right tab* | *Approved* |
+| approved | Approved Page | Discussion | 1 |
+| draft | Approved Page | Draft | 0 |
+| discussion | Approved Page | Discussion | 0 |
+
+---++ States
+%EDITTABLE{}%
+| *State* | *Allow Edit* | *Allow Move* | *Allow Comment* | *Message* | *State Type* | *Progress* |
+| NEW | LOGGEDIN | LOGGEDIN | LOGGEDIN | Neue News. | draft | 0000 |
+| NEWSERSTELLUNG | %QUERY{"Requester"}%, KeyuserGroup | %QUERY{"Requester"}%, KeyuserGroup | LOGGEDIN | Neue News. | discussion | 0000 |
+| PRUEFUNG | %QUERY{"fields[name='Superior'].value"}% | %QUERY{"fields[name='Superior'].value"}%, KeyuserGroup | %QUERY{"fields[name='Superior'].value"}%, KeyuserGroup | Pruefung der News | discussion | 0000 |
+| FREIGEGEBEN | nobody, KeyuserGroup | KeyuserGroup | KeyuserGroup | Freigegebene News | approved | 0000 |
+| ABGELEHNT | nobody, KeyuserGroup | KeyuserGroup | KeyuserGroup | Abgelehnte News | draft | 0000 |
+ 
+---++ Transitions
+%EDITTABLE{}%
+| *State* | *Action* | *Next State* | *Allowed* | *Notify* | *Condition* | *Warning* | *Attribute* | *Tasked* | *Task description* | *Due* |
+| NEW | News erstellen | NEWSERSTELLUNG | LOGGEDIN | | | | NEW | | | |
+| NEWSERSTELLUNG | Beitrag zur Prüfung freigeben | PRUEFUNG | %QUERY{"Requester"}% | %QUERY{"fields[name='Superior'].value"}% | | | REMARK | | | |
+| NEWSERSTELLUNG | News verwerfen | ABGELEHNT | %QUERY{"Requester"}%, KeyUserGroup | | | | DISCARD REMARK | | | |
+| PRUEFUNG | News freigeben | FREIGEGEBEN | %QUERY{"fields[name='Superior'].value"}%, KeyUserGroup | %QUERY{"Requester"}% | | | REMARK | | | |
+| PRUEFUNG | News verwerfen | ABGELEHNT | %QUERY{"fields[name='Superior'].value"}%, KeyUserGroup | %QUERY{"Requester"}% | | | DISCARD REMARK | | | |
+
+ * Set NOWYSIWYG=1
+ * Set WORKFLOW=
+ * Set VIEW_TEMPLATE = WorkflowView
+ * Set ALLOWTOPICCHANGE = AdminGroup
