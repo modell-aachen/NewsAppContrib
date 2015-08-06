@@ -1,0 +1,42 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1398169035" format="1.1" reprev="2" version="2"}%
+%META:TOPICPARENT{name="WebHome"}%
+%TMPL:INCLUDE{"view"}%
+
+%TMPL:DEF{"content"}%
+	<div class="homeLinkArchiv"><a title="%MAKETEXT{"archive"}%" href="NewsArchiv"><img src="%PUBURLPATH%/System/%WEB%/img/archive.png" /></a></div>
+	<br />
+	%TABPANE{class="simple"}%
+		%TAB{"%MAKETEXT{"New"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.WebHomeViewTemplate;section=newsSingleState;status=NEWSERSTELLUNG"}%%ENDTAB%
+		%TAB{"%MAKETEXT{"Check"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.WebHomeViewTemplate;section=newsSingleState;status=PRUEFUNG"}%%ENDTAB%
+		%TAB{"%MAKETEXT{"Approved"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.WebHomeViewTemplate;section=newsSingleState;status=FREIGEGEBEN"}%%ENDTAB%
+	%ENDTABPANE%
+%TMPL:END% 
+
+<!--
+%STARTSECTION{name="newsSingleState"}%
+	<table class="tablesorter">
+		<thead>
+			<tr>
+				<th class="header">%MAKETEXT{"Topic"}%</th>
+				<th class="header">%MAKETEXT{"DocumentType"}%</th>
+				<th class="header">%MAKETEXT{"TopicTitle"}%</th>
+				<th class="header">%MAKETEXT{"Superior"}%</th>
+				<th class="header">%MAKETEXT{"Subject"}%</th>
+				<th class="header">%MAKETEXT{"Locations"}%</th>
+				<th class="header">%MAKETEXT{"Author"}%</th>
+			</tr>
+		</thead>
+		<tbody>
+		%SOLRSEARCH{
+			"form:*NewsForm process_state_s:%status%"
+			fields="web, topic, field_DocumentType_s, field_TopicTitle_s, field_Superior_lst, field_Subject_s, field_Locations_s, author"
+			header=""
+			format="<tr><td><a href=\"%SCRIPTURL{view}%/$web/$topic\" title=\"$topic\">$topic</a></td><td>$field_DocumentType_s</td><td>$field_TopicTitle_s</td><td>$field_Superior_lst</td><td>$field_Subject_s</td><td>$field_Locations_s</td><td>$author</td></tr>"
+			footer=""
+			rows="99999"
+			sort="topic asc"
+		}%
+		</tbody>
+	</table>
+%ENDSECTION{name="newsSingleState"}%
+-->

@@ -1,0 +1,6 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="save topic" date="1438074669" format="1.1" reprev="2" version="15"}%
+
+%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="nobody"}%
+%META:PREFERENCE{name="DISPLAYCOMMENTS" title="DISPLAYCOMMENTS" type="Set" value="off"}%
+%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="WebHomeView"}%

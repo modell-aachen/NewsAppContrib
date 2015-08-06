@@ -1,0 +1,4 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1436446396" format="1.1" version="8"}%
+%META:TOPICPARENT{name="Templates"}%
+
+   * <a href="%SCRIPTURLPATH{"edit"}%/%BASEWEB%/NewsAUTOINC000?templatetopic=%WEB%.NewsTemplate;formtemplate=NewsForm;t=%GMTIME{$epoch}%">%MAKETEXT{"Create new News"}%</a>

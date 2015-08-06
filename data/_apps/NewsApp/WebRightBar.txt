@@ -1,0 +1,34 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1438775714" format="1.1" version="19"}%
+
+<table class="newsItem">
+	%SOLRSEARCH{
+		"form: *NewsForm field_DocumentType_s: \"News\" process_state_s:FREIGEGEBEN"
+		fields="web, topic, createdate, webtopic, date, author, text, attachment, field_TopicTitle_s, field_Creator_lst, field_Subject_s, field_Date_dt, field_CalenarPublish_dt"
+		highlight="on"
+		format="
+			<tr>		
+				<td>
+<div class=\"header\"><a href='%SCRIPTURL{view}%/$web/$topic'>$field_TopicTitle_s</a></div>
+<div class=\"info\">$createdate | $field_Subject_s | $field_Creator_lst (%MAKETEXT{"Changed"}% $date | $author)</div>
+<div class=\"summary\">
+$percntINCLUDE{\"$web.$topic\"}$percnt
+</div>
+                                </td>
+				<td class=\"bigThumb\">$percntINCLUDE{\"%TOPIC%\" section=\"preview_image\" topic=\"$webtopic\"}$percnt</td>
+			</tr>
+			<tr>
+				<td colspan='2'><hr></td>
+			</tr>"
+		sort="date desc"
+		rows="5"
+	}%
+</table>
+
+<div style="display:none">
+	%STARTSECTION{"preview_image"}%
+	%ATTACHMENTLIST{topic="%topic%" format="<img src='$fileUrl' />" sort="$fileDate" sortorder="ascending" limit="1"}%
+	%ENDSECTION{"preview_image"}%
+</div>
+
+
+%META:FILEATTACHMENT{name="close2.png" attachment="close2.png" attr="" comment="" date="1438175076" path="close2.png" size="826" user="BaseUserMapping_333" version="1"}%
