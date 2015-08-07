@@ -5,5 +5,5 @@
 | DocumentType | select | 1 | News | | |
 | TopicTitle | text | 50 | | Bitte geben Sie einen eindeutigen Artikelnamen an | M |
 | Superior | textboxlist | 50 mustMatch limit=1 | %USERAUTOCOMPLETE% | Bitte tragen Sie Ihren Vorgesetzten ein | M |
-| Subject | select2 | 50 | Subject 1, Subject 2, Subject 3  | Subject | |
-| Locations | select2 | 50 | Location 1, Location 2 | Locations | |
+| Subject | select+values | 1 | Subject 1=Subject 1, Subject2=Subject 2| Subject | |
+| Locations | select+values | 1 | Location 1=Location 1, Location 2=Location 2 | Locations | |
