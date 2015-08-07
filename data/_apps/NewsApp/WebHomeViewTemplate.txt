@@ -3,7 +3,7 @@
 %TMPL:INCLUDE{"view"}%
 
 %TMPL:DEF{"content"}%
-	<div class="homeLinkArchiv"><a title="%MAKETEXT{"archive"}%" href="NewsArchiv"><img src="%PUBURLPATH%/System/%WEB%/img/archive.png" /></a></div>
+	<div class="homeLinkArchiv"><a title="%MAKETEXT{"archive"}%" href="NewsArchiv"><img src="%PUBURLPATH%/System/%NEWSWEB%/img/archive.png" /></a></div>
 	<br />
 	%TABPANE{class="simple"}%
 		%TAB{"%MAKETEXT{"New"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.WebHomeViewTemplate;section=newsSingleState;status=NEWSERSTELLUNG"}%%ENDTAB%
