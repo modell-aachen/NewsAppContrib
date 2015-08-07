@@ -4,9 +4,6 @@ jQuery(document).ready(function() {
 	* General Application Settings
 	**/	
 
-	//--- Set News Link
-	jQuery("#modacButtonsRIGHT").find('#modacSearchBox').before("<li id='toggleNews'><a href='#'>News</a></li>");
-
 	//--- Close Function for NewsSlider
 	jQuery('.rightBarClose').click(function() {
         	jQuery('#toggleNews').trigger('click');

@@ -1,0 +1,6 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1437649337" format="1.1" version="4"}%
+<div id="modacTopBarPersonal">
+<img src="%PUBURL%/System/ModacSkinTheme/ModacSkinLogos/user-icon.png" />&nbsp;
+<noautolink>%USERNAME%</noautolink> 
+&nbsp;&nbsp;<a href="#" id="toggleNews">News</a>
+%IF{"istopic '%WIKIUSERNAME%'" then="&nbsp;&nbsp;[[%WIKIUSERNAME%][%MAKETEXT{"MyPage"}%]]"}% %IF{"$ LOGOUT != ''" then='&nbsp;&nbsp;%LOGOUT%'}% %IF{"$ LOGIN != ''" then='&nbsp;&nbsp;%LOGIN%'}%</div>
