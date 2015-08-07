@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 	* WebRightBar
 	**/
 	jQuery('.modacRightBar .newsItem .summary').each(function() {
-        	var wholeText   = jQuery(this).text();
+        	var wholeText   = jQuery(this).html();
            	var partText    = wholeText.substring(0, 300);
            	if (wholeText.length > 300) {
             		jQuery(this).after('<div class="partSummary">' + partText + ' ...</div>').hide();
