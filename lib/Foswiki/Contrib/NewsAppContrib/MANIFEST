@@ -27,10 +27,10 @@ locale/NewsAppContrib/de.po 0644
 templates/foswiki.news.tmpl 0644
 pub/System/NewsApp/css/news.css 0644
 pub/System/NewsApp/js/news.js 0644
-pub/System/NewsApp/css/font-awesome-4.4.0/css/font-awesome.css
-pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.eot
-pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.svg
-pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.ttf
-pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.woff
-pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.woff2
-pub/System/NewsApp/css/font-awesome-4.4.0/fonts/FontAwesome.otf
+pub/System/NewsApp/css/font-awesome-4.4.0/css/font-awesome.css 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.eot 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.svg 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.ttf 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.woff 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.woff2 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/FontAwesome.otf 0644
