@@ -20,6 +20,7 @@ data/_apps/NewsApp/WebSearch.txt 0644
 data/_apps/NewsApp/WebSearchAdvanced.txt 0644
 data/_apps/NewsApp/WebStatistics.txt 0644
 data/_apps/NewsApp/WebTopicList.txt 0644
+data/_apps/NewsApp/WebTopBar.txt 0644
 data/_apps/NewsApp/ArchivContentLoad.txt 0644
 lib/Foswiki/Contrib/NewsAppContrib.pm 0644
 locale/NewsAppContrib/de.po 0644
