@@ -1,5 +1,5 @@
 data/System/NewsAppContrib.txt 0644
-data/_apps/NewsApp/NewsArchiv.txt 0644
+data/_apps/NewsApp/Overview.txt 0644
 data/_apps/NewsApp/NewsForm.txt 0644
 data/_apps/NewsApp/NewsTemplate.txt 0644
 data/_apps/NewsApp/NewsWorkflow.txt 0644
@@ -26,7 +26,10 @@ locale/NewsAppContrib/de.po 0644
 templates/foswiki.news.tmpl 0644
 pub/System/NewsApp/css/news.css 0644
 pub/System/NewsApp/js/news.js 0644
-pub/System/NewsApp/img/add.png 0644
-pub/System/NewsApp/img/archive.png 0644
-pub/System/NewsApp/img/close.png 0644
-pub/System/NewsApp/img/home.png 0644
+pub/System/NewsApp/css/font-awesome-4.4.0/css/font-awesome.css
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.eot
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.svg
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.ttf
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.woff
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/fontawesome-webfont.woff2
+pub/System/NewsApp/css/font-awesome-4.4.0/fonts/FontAwesome.otf
