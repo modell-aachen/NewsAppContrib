@@ -39,7 +39,7 @@ This is step by step manual to install the news application on your wiki system
    * Open *Main/SitePreferences*
    * add two variables to the *Wiki Settings*
       * Set NEWSWEB = NewsApp
-      * Set NEWSWEBNAME = News
+      * Set NEWSWEBNAME = NewsApp (if you change the name of your Web, you need to edit this value as well)
    * add another skin value *news*
       * <pre> Set SKIN = news ,metacomment</pre>
    * Open *Custom/WebTopicList*
