@@ -21,7 +21,8 @@
         text = "
         <literal>
                 <link rel='stylesheet' href='%PUBURLPATH%/System/%NEWSWEB%/css/news.css' />
-        </literal>
+		<link rel='stylesheet' href='%PUBURLPATH%/System/%NEWSWEB%/css/font-awesome-4.4.0/css/font-awesome.css' />
+	</literal>
 "
 }%
 %TMPL:END%
@@ -30,15 +31,17 @@
 %TMPL:PREV%
 
 <div id="rightBarWrapper">
-   	<div style="background-image: url('%PUBURLPATH%/System/%NEWSWEB%/img/close.png')" class="rightBarClose"></div>
+	<div class="rightBarClose"><i class="fa fa-chevron-right"></i></div>
+   	<!-- <div style="background-image: url('%PUBURLPATH%/System/%NEWSWEB%/img/close.png')" class="rightBarClose"></div> -->
    	<section class="newsHeader">Aktuelles aus der Organisation</section>
    	<div class="modacRightBar">
 %INCLUDE{"%NEWSWEBNAME%.WebRightBar"}%
    	</div>
    	<div id="rightBarControl">
-		<div title="Neue News anlegen" id="linkNewNews"><a class="newsTopIconLinks" href="%SCRIPTURL{edit}%/%NEWSWEBNAME%/NewsAUTOINC000?templatetopic=%NEWSWEBNAME%.NewsTemplate;formtemplate=NewsForm;t=%GMTIME{$epoch}%"><img src="%PUBURLPATH%/System/%NEWSWEB%/img/add.png" /></a></div>
-        	<div title="Workflow &Uuml;bersicht" id="linkHome"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEBNAME%/WebHome"><img src="%PUBURLPATH%/System/%NEWSWEB%/img/home.png" /></a></div>
-   		<div title="Archiv" id="linkArchiv"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEBNAME%/NewsArchiv"><img src=%PUBURLPATH%/System/%NEWSWEB%/img/archive.png" /></a></div>
+
+		<div title="New News" id="linkNewNews"><a class="newsTopIconLinks" href="%SCRIPTURL{edit}%/%NEWSWEBNAME%/NewsAUTOINC000?templatetopic=%NEWSWEBNAME%.NewsTemplate;formtemplate=NewsForm;t=%GMTIME{$epoch}%"><i class="fa fa-plus-circle"></i></a></div>
+		<div title="home" id="linkHome"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEBNAME%/WebHome"><i class="fa fa-home"></i></a></div>
+		<div title="Workflow" id="linkArchiv"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEBNAME%/Overview"><i class="fa fa-refresh"></i></a></div>
 	</div>
 </div>
 

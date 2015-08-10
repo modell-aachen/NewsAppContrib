@@ -1,5 +1,40 @@
-%META:TOPICINFO{author="BaseUserMapping_999" comment="autosave" date="1438847038" format="1.1" version="1"}%
+%META:TOPICINFO{author="BaseUserMapping_999" comment="autosave" date="1438954275" format="1.1" version="7"}%
+---+!! !NewsAppContrib
 
-|  Author: | Modell Aachen GmbH |
+<!-- One line description, required for extensions repository catalog.
+BuildContrib will fill in the SHORTDESCRIPTION with the value of
+$SHORTDESCRIPTION from the .pm module, or you can redefine it here if you
+prefer.    
+   * Set SHORTDESCRIPTION = Wiki news application -->
+
+%SHORTDESCRIPTION%
+
+%TOC%
+---+ %BLUE%Introduction%ENDCOLOR%
+
+The news app allows each colleague to write and publish news, which may be interesting or important for everyone using the Wiki
+---+ %BLUE%Description%ENDCOLOR%
+---+++ Workflow
+   1 *NEWSERSTELLUNG*
+<p style="margin-left: 40px;">After creating a new news topic the author may check his news in the  *NEWSERSTELLUNG*  state.</p> <ol start="2"> <li> *PRUEFUNG* </li> </ol><p style="margin-left: 40px;">If the Author is satisfied with his news article, he may give it to the superior (department head for example) to confirm the news. When the superior is asked to confirm the news, its state is  *PRUEFUNG.* </p> <ol start="3"> <li> *FREIGEGEBEN* </li> </ol><p style="margin-left: 40px;">This state describe all confirmed news topics.</p> <ol start="4"> <li> *ABGELEHNT* </li> </ol><p style="margin-left: 40px;">In each previous workflow state, the current processor may discard the news, if the news may not be published</p>
+---+++ Main sites
+---+ %BLUE%Installation%ENDCOLOR%
+---+ %BLUE%Info%ENDCOLOR%
+
+Many thanks to the following sponsors for supporting this work:
+   * Acknowledge any sponsors here
+
+|  Author(s): | |
 |  Home: | http://www.modell-aachen.de |
 |  Support: | http://www.modell-aachen.de |
+|  Copyright: | © |
+|  License: | [[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]] |
+|  Release: | |
+|  Version: | |
+|  Change History: | <!-- versions below in reverse order --> |
+|  Dependencies: | |
+|  Home page: | |
+|  Support: | |
+<!-- Do _not_ attempt to edit this topic; it is auto-generated. -->
+
+

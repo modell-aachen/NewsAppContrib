@@ -18,6 +18,14 @@
     margin-top: 1px;
     position: relative;
 }
+#rightBarWrapper #rightBarControl div {
+    font-size: 22px;
+    height: 30px;
+    width: 30px;
+}
+#rightBarWrapper #rightBarControl div a {
+    color: #fff;
+}
 #rightBarWrapper .rightBarClose {
     background-color: #ca002f;
     background-position: center center;
@@ -26,11 +34,13 @@
     border-bottom-left-radius: 5px;
     color: #fff;
     cursor: pointer;
-    height: 35px;
-    left: -50px;
+    font-size: 18px;
+    height: 19px;
+    left: -32px;
+    padding: 8px;
     position: absolute;
     top: -1px;
-    width: 48px;
+    width: 15px;
 }
 #rightBarWrapper .modacRightBar {
     border-right: 0;
@@ -100,9 +110,9 @@
 /***** END: WebRightBar *****/
 /****************************/
 
-/************************/
-/***** NewsArchive  *****/
-/************************/
+/*********************/
+/***** Overview  *****/
+/*********************/
 #archiveContentArea table.newsArchivItem {
     width: 100%; 
 }
@@ -138,9 +148,9 @@
     text-transform: uppercase;
 }
 
-/*****************************/
-/***** END: NewsArchive *****/
-/*****************************/
+/*************************/
+/***** END: Overview *****/
+/*************************/
 
 /********************/
 /***** WebHome  *****/
@@ -148,8 +158,13 @@
 .homeLinkArchiv{ 
     background-color: #ca002f;
     border-radius: 5px;
-    padding: 0 2px;
-    width: 30px;
+    padding: 4px;
+    width: 26px;
+    height: 26px;
+}
+.homeLinkArchiv a{
+    font-size: 26px;
+    color: #fff !important; 
 }
 /************************/
 /***** END: WebHome *****/
