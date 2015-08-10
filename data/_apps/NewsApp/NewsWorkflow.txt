@@ -1,16 +1,16 @@
 %META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1426694764" format="1.1" reprev="12" version="30"}%
 ---++ Defaults
 | *State type* | *Left tab* | *Right tab* | *Approved* |
-| approved | Approved Page | Discussion | 1 |
-| draft | Approved Page | Draft | 0 |
+| approved | News | Discussion | 1 |
+| draft | News | News-Entwurf | 0 |
 | discussion | Approved Page | Discussion | 0 |
 
 ---++ States
 %EDITTABLE{}%
 | *State* | *Allow Edit* | *Allow Move* | *Allow Comment* | *Message* | *State Type* | *Progress* |
 | NEW | LOGGEDIN | LOGGEDIN | LOGGEDIN | Neue News. | draft | 0000 |
-| NEWSERSTELLUNG | %QUERY{"Requester"}%, KeyuserGroup | %QUERY{"Requester"}%, KeyuserGroup | LOGGEDIN | Neue News. | discussion | 0000 |
-| PRUEFUNG | %QUERY{"fields[name='Superior'].value"}% | %QUERY{"fields[name='Superior'].value"}%, KeyuserGroup | %QUERY{"fields[name='Superior'].value"}%, KeyuserGroup | Pruefung der News | discussion | 0000 |
+| NEWSERSTELLUNG | %QUERY{"Requester"}%, KeyuserGroup | %QUERY{"Requester"}%, KeyuserGroup | LOGGEDIN | Neue News. | draft | 0000 |
+| PRUEFUNG | %QUERY{"fields[name='Superior'].value"}% | %QUERY{"fields[name='Superior'].value"}%, KeyuserGroup | %QUERY{"fields[name='Superior'].value"}%, KeyuserGroup | Pruefung der News | draft | 0000 |
 | FREIGEGEBEN | nobody, KeyuserGroup | KeyuserGroup | KeyuserGroup | Freigegebene News | approved | 0000 |
 | ABGELEHNT | nobody, KeyuserGroup | KeyuserGroup | KeyuserGroup | Abgelehnte News | draft | 0000 |
  

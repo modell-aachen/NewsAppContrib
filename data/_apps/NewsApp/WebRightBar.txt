@@ -30,5 +30,5 @@ $percntINCLUDE{\"$web.$topic\"}$percnt
 	%ENDSECTION{"preview_image"}%
 </div>
 
-
-%META:FILEATTACHMENT{name="close2.png" attachment="close2.png" attr="" comment="" date="1438175076" path="close2.png" size="826" user="BaseUserMapping_333" version="1"}%
+%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminUser"}%
