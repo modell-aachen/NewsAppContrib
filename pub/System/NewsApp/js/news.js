@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
 	/**
 	* Archive
 	**/
-	if (foswiki.preferences.TOPIC.indexOf('WebHome') >= 0) {
+	if (foswiki.preferences.TOPIC.indexOf('WebHome') >= 0 && foswiki.preferences.WEB.indexOf('News') >= 0) {
 		var rowNumber = 0;
 
              	getNextArchivData(rowNumber);
