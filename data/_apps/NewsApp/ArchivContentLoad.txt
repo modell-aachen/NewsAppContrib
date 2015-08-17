@@ -55,7 +55,7 @@ $percntINCLUDE{\"$web.$topic\"}$percnt
 
 <div style="display:none">
 %STARTSECTION{"preview_image"}%
-%ATTACHMENTLIST{topic="%topic%" format="<img src='$fileUrl' />" sort="$fileDate" sortorder="ascending" limit="1"}%
+%ATTACHMENTLIST{topic="%topic%" format="<img src='%SCRIPTURLPATH{"rest"}%/ImagePlugin/resize?topic=%topic%;file=$fileUrl;width=100;height=100' />" sort="$fileDate" sortorder="ascending" limit="1"}%
 %ENDSECTION{"preview_image"}%
 </div>
 
