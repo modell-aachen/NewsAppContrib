@@ -19,7 +19,7 @@
     position: relative;
 }
 #rightBarWrapper #rightBarControl div {
-    font-size: 22px;
+    font-size: 25px;
     height: 30px;
     width: 30px;
 }
@@ -59,19 +59,19 @@
     position: relative;
 }
 #rightBarWrapper #rightBarControl #linkArchiv {
-    left: 6%;
+    left: 7%;
 }
 #rightBarWrapper #rightBarControl #linkNewNews {
-    left: 1%;
+    left: 2%;
 }
 #rightBarWrapper #rightBarControl #linkHome {
-    left: 11%;
+    left: 12%;
 }
 #rightBarWrapper #rightBarControl #linkArchiv,
 #rightBarWrapper #rightBarControl #linkNewNews,
 #rightBarWrapper #rightBarControl #linkHome {
     position: absolute;
-    top: 5px;
+    top: 10px;
 }
 #rightBarWrapper table.newsItem { 
     width: 100%; 
@@ -123,14 +123,13 @@
     padding: 0 50px 0 0; 
 }
 #archiveContentArea .singleNewsItemContent { 
-    width: 1000px; 
     border-bottom: 1px solid; 
     margin: 0 0 20px 0; 
     padding: 10px; 
 }
 #archiveContentArea .singleNewsItemText { 
     float: left; 
-    width: 500px; 
+    width: 60%; 
 }
 #archiveContentArea .singleNewsItemImage { 
     float: right; 
