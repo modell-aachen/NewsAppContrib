@@ -156,14 +156,11 @@
 /***** WebHome  *****/
 /********************/
 .homeLinkArchiv{ 
-    background-color: #ca002f;
-    border-radius: 5px;
-    padding: 4px;
-    width: 26px;
-    height: 26px;
+    float: right;
+    margin-right: 10px; 
 }
 .homeLinkArchiv a{
-    font-size: 26px;
+    font-size: 24px;
     color: #fff !important; 
 }
 /************************/
