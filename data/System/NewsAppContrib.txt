@@ -1,10 +1,5 @@
 ---+!! !NewsAppContrib
 
-<!--  
-One line description, required for extensions repository catalog. BuildContrib will fill in the SHORTDESCRIPTION with the value of $SHORTDESCRIPTION from the .pm module, or you can redefine it here if you prefer.
-   * Set SHORTDESCRIPTION = Wiki news application  
--->
-
 %SHORTDESCRIPTION%
 
 %TOC%
@@ -52,21 +47,15 @@ This is step by step manual to install the news application on your wiki system
             * <pre> cat NewsApp/WebTopBar.txt</pre>
             * Copy the News link and add it to the Custom/WebTopBarDefault.txt
 
----++ %BLUE%Info%ENDCOLOR%
-
-Many thanks to the following sponsors for supporting this work:
-   * Acknowledge any sponsors here
+---++ Info
 
 |  Author(s): | |
 |  Home: | http://www.modell-aachen.de |
-|  Support: | http://www.modell-aachen.de |
-|  Copyright: | © |
+|  Copyright: | © 2015, Modell Aachen GmbH |
 |  License: | [[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]] |
-|  Release: | |
-|  Version: | |
+|  Release: | %$RELEASE% |
+|  Version: | %$VERSION% |
 |  Change History: | <!-- versions below in reverse order --> |
 |  Dependencies: | |
 |  Home page: | |
 |  Support: | |
-<!-- Do _not_ attempt to edit this topic; it is auto-generated. -->
-
