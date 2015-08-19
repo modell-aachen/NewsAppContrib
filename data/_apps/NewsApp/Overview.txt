@@ -3,14 +3,11 @@
 <div class="widgetBlockTitle">%MAKETEXT{"News Summary"}%
 	<div class="homeLinkArchiv"><a title="%MAKETEXT{"home"}%" href="WebHome"><i class="fa fa-home"></i></a></div>
 </div>
-<div class="widgetBlockContent">
-	%TABPANE{class="simple"}%
-       		%TAB{"%MAKETEXT{"New"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.Overview;section=newsSingleState;status=NEWSERSTELLUNG"}%%ENDTAB%
-        	%TAB{"%MAKETEXT{"Check"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.Overview;section=newsSingleState;status=PRUEFUNG"}%%ENDTAB%
-        	%TAB{"%MAKETEXT{"Approved"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.Overview;section=newsSingleState;status=FREIGEGEBEN"}%%ENDTAB%
-	%ENDTABPANE%
-</div>
- 
+<div class="widgetBlockContent">%TABPANE{class="simple"}%
+       	%TAB{"%MAKETEXT{"New"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.Overview;section=newsSingleState;status=NEWSERSTELLUNG"}%%ENDTAB%
+        %TAB{"%MAKETEXT{"Check"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.Overview;section=newsSingleState;status=PRUEFUNG"}%%ENDTAB%
+        %TAB{"%MAKETEXT{"Approved"}%" url="%SCRIPTURLPATH{"rest"}%/RenderPlugin/tag?name=INCLUDE;param=%WEB%.Overview;section=newsSingleState;status=FREIGEGEBEN"}%%ENDTAB%
+%ENDTABPANE%</div> 
 <!--
 %STARTSECTION{name="newsSingleState"}%
 	<table class="tablesorter">

@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
         	jQuery('#rightBarWrapper').show().animate({
                 	right : '0'	
         	}, 500);
-			getNextArchivData(rowNumber, jQuery('.modacRightBar').first(), 'rightBarContentLoad', setRightBarConfig);
+			getNextArchivData(0, jQuery('.modacRightBar').first(), 'rightBarContentLoad', setRightBarConfig);
 	}, function() {
         	jQuery('#rightBarWrapper').animate({
                 	right : '-100%'
@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
 });
 
 function getNextArchivData(rowNumber, obj, section, callback) {
-	jQuery.get(foswiki.preferences.SCRIPTURL + '/view' + foswiki.preferences.SCRIPTSUFFIX  + '/News/ArchivContentLoad?contenttype=text/plain;skin=text;section=' + section + ';rowNumber=' + rowNumber , function(data) {
+	jQuery.get(foswiki.preferences.SCRIPTURL + '/view' + foswiki.preferences.SCRIPTSUFFIX  + '/' + foswiki.preferences.NEWSNAME  +  '/ArchivContentLoad?contenttype=text/plain;skin=text;section=' + section + ';rowNumber=' + rowNumber , function(data) {
 		jQuery(obj).append(data);
   	}).done(function() {
 		jQuery(obj).find('img').each(function() {

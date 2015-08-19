@@ -7,6 +7,7 @@
 	id = "newsWikiScript" 
 	text = "
 	<literal>
+		<script type='text/javascript'>jQuery.extend(foswiki.preferences, {NEWSNAME: 'News'});</script>
 		<script type='text/javascript' src='%PUBURLPATH%/System/%NEWSWEB%/js/news.js'></script>
 	</literal>
 "
@@ -29,10 +30,9 @@
 
 %TMPL:DEF{"main"}%
 %TMPL:PREV%
-
 <div id="rightBarWrapper">
 	<div class="rightBarClose"><i class="fa fa-chevron-right"></i></div>
-   	<section class="newsHeader">Aktuelles aus der Organisation</section>
+   	<div class="newsHeader">Aktuelles aus der Organisation</div>
    	<div class="modacRightBar"></div>
    	<div id="rightBarControl">
 		<div title="New News" id="linkNewNews"><a class="newsTopIconLinks" href="%SCRIPTURL{edit}%/%NEWSWEBNAME%/NewsAUTOINC000?templatetopic=%NEWSWEBNAME%.NewsTemplate;formtemplate=NewsForm;t=%GMTIME{$epoch}%"><i class="fa fa-plus-circle"></i></a></div>
@@ -40,6 +40,5 @@
 		<div title="Workflow" id="linkArchiv"><a class="newsTopIconLinks" href="%SCRIPTURL{view}%/%NEWSWEBNAME%/Overview"><i class="fa fa-refresh"></i></a></div>
 	</div>
 </div>
-
 %TMPL:END%
 
