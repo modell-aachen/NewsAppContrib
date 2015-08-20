@@ -1,0 +1,2 @@
+Foswiki::Plugins::ImagePlugin,>=3.33,perl,Required
+Foswiki::Plugins::RenderPlugin,>=3.3,perl,Required
